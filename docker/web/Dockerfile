@@ -11,7 +11,7 @@ RUN apt-get update -qq && \
                        --no-install-recommends && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+    # ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 RUN mkdir /my_app
 WORKDIR /my_app
