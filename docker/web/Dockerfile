@@ -10,7 +10,7 @@ RUN apt-get update -qq && \
                        sqlite3 \
                        --no-install-recommends && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /var/lib/apt/lists/*
     # ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 RUN mkdir /my_app
